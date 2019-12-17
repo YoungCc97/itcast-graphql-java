@@ -9,6 +9,7 @@ public class User {
     private Long id;
     private String name;
     private Integer age;
+    private Card card;
 
     public User() {
     }
@@ -17,6 +18,12 @@ public class User {
         this.id = id;
         this.name = name;
         this.age = age;
+    }
+    public User(Long id, String name, Integer age,Card card) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.card = card;
     }
 
     public Long getId() {
@@ -41,5 +48,13 @@ public class User {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    public Card getCard() {
+        return card;
+    }
+
+    public void setCard(Card card) {
+        this.card = card;
     }
 }
